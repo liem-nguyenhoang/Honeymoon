@@ -10,6 +10,7 @@ import SwiftUI
 struct GuideView: View {
     // MARK: - PROPERTY
     
+    @Environment(\.presentationMode) var presentationMode
     
     // MARK: - BODY
     
@@ -56,7 +57,7 @@ struct GuideView: View {
                 
                 Button {
                     // ACTION
-                    print("A button was tapped")
+                    self.presentationMode.wrappedValue.dismiss()
                 } label: {
                     Text("Continue".uppercased())
                         .font(.headline)
