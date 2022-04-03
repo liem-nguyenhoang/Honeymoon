@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C5769D2027F9B74A0085C12E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5769D1F27F9B74A0085C12E /* LaunchScreen.storyboard */; };
 		C587E44627F9AF1B002FD303 /* HoneymoonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C587E44527F9AF1B002FD303 /* HoneymoonApp.swift */; };
 		C587E44827F9AF1B002FD303 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C587E44727F9AF1B002FD303 /* ContentView.swift */; };
 		C587E44A27F9AF1D002FD303 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C587E44927F9AF1D002FD303 /* Assets.xcassets */; };
@@ -14,11 +15,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C5769D1F27F9B74A0085C12E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C5769D2127F9BA3B0085C12E /* backgound.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = backgound.pdf; sourceTree = "<group>"; };
 		C587E44227F9AF1B002FD303 /* Honeymoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Honeymoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C587E44527F9AF1B002FD303 /* HoneymoonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonApp.swift; sourceTree = "<group>"; };
 		C587E44727F9AF1B002FD303 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C587E44927F9AF1D002FD303 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C587E44C27F9AF1D002FD303 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C587E45527F9B66F002FD303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 		C587E43927F9AF1B002FD303 = {
 			isa = PBXGroup;
 			children = (
+				C5769D2127F9BA3B0085C12E /* backgound.pdf */,
 				C587E44427F9AF1B002FD303 /* Honeymoon */,
 				C587E44327F9AF1B002FD303 /* Products */,
 			);
@@ -51,6 +56,8 @@
 		C587E44427F9AF1B002FD303 /* Honeymoon */ = {
 			isa = PBXGroup;
 			children = (
+				C5769D1F27F9B74A0085C12E /* LaunchScreen.storyboard */,
+				C587E45527F9B66F002FD303 /* Info.plist */,
 				C587E44527F9AF1B002FD303 /* HoneymoonApp.swift */,
 				C587E44727F9AF1B002FD303 /* ContentView.swift */,
 				C587E44927F9AF1D002FD303 /* Assets.xcassets */,
@@ -125,6 +132,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5769D2027F9B74A0085C12E /* LaunchScreen.storyboard in Resources */,
 				C587E44D27F9AF1D002FD303 /* Preview Assets.xcassets in Resources */,
 				C587E44A27F9AF1D002FD303 /* Assets.xcassets in Resources */,
 			);
@@ -266,14 +274,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Honeymoon/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Honeymoon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -295,14 +305,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Honeymoon/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Honeymoon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
