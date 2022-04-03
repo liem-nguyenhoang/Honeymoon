@@ -14,19 +14,47 @@ struct ContentView: View {
     @State var showGuild: Bool = false
     @State var showInfo: Bool = false
     
+    // MARK: - CARD VIEWS
+    
+    var cardViews: [CardView] = {
+        var views = [CardView]()
+        for index in 0..<2 {
+            views.append(CardView(honeymoon: honeymoonData[index]))
+        }
+        return views
+    }()
+    
+    // MARK: TOP CARD
+    
+    func isTopCard(cardView: CardView) -> Bool {
+        guard let index = cardViews.firstIndex(where: {$0.id == cardView.id })else {
+            return false
+        }
+        return index == 0
+    }
+    
     // MARK: - BODY
     
     var body: some View {
         VStack {
+            // MARK: - HEADER
+            
             HeaderView(showGuideView: $showGuild,showInfoView: $showInfo)
             
             Spacer()
             
-            CardView(honeymoon: honeymoonData[2])
-                .padding()
+            // MARK: - CARDS
+            
+            ZStack {
+                ForEach(cardViews){cardView in
+                    cardView
+                        .zIndex(self.isTopCard(cardView: cardView) ? 1 : 0)
+                }
+            }
             
             Spacer()
             
+            // MARK: - FOOTER
             FooterView(showBookingAlert: $showAlert)
         }
         .alert(isPresented: $showAlert) {
