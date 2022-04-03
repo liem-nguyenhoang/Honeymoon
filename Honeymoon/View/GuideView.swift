@@ -33,7 +33,7 @@ struct GuideView: View {
                 
                 VStack(alignment: .leading, spacing: 25) {
                     GuideComponent(
-                        title: "Liek",
+                        title: "Like",
                         subtitle: "Swipe right",
                         description: "Do you like this destination? Touch the screen and swipe right. It will be saved to the favourites.",
                         icon: "heart.circle"
