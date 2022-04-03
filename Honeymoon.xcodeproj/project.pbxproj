@@ -21,6 +21,9 @@
 		C587E44827F9AF1B002FD303 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C587E44727F9AF1B002FD303 /* ContentView.swift */; };
 		C587E44A27F9AF1D002FD303 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C587E44927F9AF1D002FD303 /* Assets.xcassets */; };
 		C587E44D27F9AF1D002FD303 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C587E44C27F9AF1D002FD303 /* Preview Assets.xcassets */; };
+		C5D1703927F9E4BD008A8D93 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1703827F9E4BD008A8D93 /* InfoView.swift */; };
+		C5D1703C27F9E5BC008A8D93 /* TitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1703B27F9E5BC008A8D93 /* TitleModifier.swift */; };
+		C5D1703E27F9E755008A8D93 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D1703D27F9E755008A8D93 /* ButtonModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		C587E44927F9AF1D002FD303 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C587E44C27F9AF1D002FD303 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C587E45527F9B66F002FD303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C5D1703827F9E4BD008A8D93 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		C5D1703B27F9E5BC008A8D93 /* TitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleModifier.swift; sourceTree = "<group>"; };
+		C5D1703D27F9E755008A8D93 /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 				C5769D2C27F9CFB90085C12E /* HeaderView.swift */,
 				C5769D2E27F9D1690085C12E /* FooterView.swift */,
 				C5769D3727F9D6670085C12E /* GuideView.swift */,
+				C5D1703827F9E4BD008A8D93 /* InfoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -109,6 +116,7 @@
 		C587E44427F9AF1B002FD303 /* Honeymoon */ = {
 			isa = PBXGroup;
 			children = (
+				C5D1703A27F9E5AB008A8D93 /* Modifier */,
 				C5769D3227F9D3080085C12E /* Component */,
 				C5769D2927F9CCAB0085C12E /* View */,
 				C5769D2627F9CC4F0085C12E /* Data */,
@@ -129,6 +137,15 @@
 				C587E44C27F9AF1D002FD303 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C5D1703A27F9E5AB008A8D93 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				C5D1703B27F9E5BC008A8D93 /* TitleModifier.swift */,
+				C5D1703D27F9E755008A8D93 /* ButtonModifier.swift */,
+			);
+			path = Modifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,9 +221,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5769D2827F9CC5B0085C12E /* HoneymoonData.swift in Sources */,
+				C5D1703927F9E4BD008A8D93 /* InfoView.swift in Sources */,
 				C5769D2F27F9D1690085C12E /* FooterView.swift in Sources */,
+				C5D1703C27F9E5BC008A8D93 /* TitleModifier.swift in Sources */,
 				C5769D2D27F9CFBA0085C12E /* HeaderView.swift in Sources */,
 				C5769D2527F9CC160085C12E /* HoneymoonModel.swift in Sources */,
+				C5D1703E27F9E755008A8D93 /* ButtonModifier.swift in Sources */,
 				C5769D3427F9D31C0085C12E /* HeaderComponent.swift in Sources */,
 				C587E44827F9AF1B002FD303 /* ContentView.swift in Sources */,
 				C587E44627F9AF1B002FD303 /* HoneymoonApp.swift in Sources */,
